@@ -1,0 +1,28 @@
+
+nav {
+    color: #000000;
+    font-weight: 500;
+    /* background-color: #000000; */
+}
+a.link {
+    color: #000000;
+    font-weight: 500;
+    margin: 20px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #000000;
+    font-weight: 500;
+}
+h3 {
+    color:#000000;
+}
+
+.center {
+    margin:200px;
+}
+/* .center {position: absolute; top: 0; margin: 100px; left: 0; right: 0; left: 0; text-align: center; border: 1px solid #ccc; height: 50%; width: 50%; vertical-align: middle;} */
+@media only screen and (max-width: 980px) {
+    .image-hero {
+      display:none;
+    }
+  }
