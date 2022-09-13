@@ -1,6 +1,8 @@
 
 
 import { Box, Tab, Tabs, Typography } from '@mui/material';
+import All from './images/All'
+import Shoes from './images/Shoes'
 import { useState } from 'react';function Feature() {
   const [tabIndex, setTabIndex] = useState(0);const handleTabChange = (event, newTabIndex) => {
     setTabIndex(newTabIndex);
@@ -17,12 +19,12 @@ import { useState } from 'react';function Feature() {
       <Box sx={{ padding: 2 }}>
         {tabIndex === 0 && (
           <Box>
-            <Typography>The first tab</Typography>
+            <All/>
           </Box>
         )}
         {tabIndex === 1 && (
           <Box>
-            <Typography>The second tab</Typography>
+            <All />
           </Box>
         )}
         {tabIndex === 2 && (

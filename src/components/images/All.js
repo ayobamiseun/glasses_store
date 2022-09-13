@@ -35,19 +35,25 @@ export default function All() {
             {items.map((item) => (
                 
         <Col className="col-sm-3" key={item.img}>
-        
-                 <img
+        <div style={{maxWidth:"80%", margin:"auto"}}>
+        <img
             src={`${item.image}?w=298&fit=crop&auto=format`}
             srcSet={`${item.image}?w=248&fit=crop&auto=format&dpr=1 2x`}
             alt={item.title}
             loading="lazy"
             style={{height:"200px", width:"200px"}}
           />
-          
-          <div style={{display:"flex"}}>
+          <div style={{display:"flex",}}>
           <p style={{}}>{item.title}</p>
-          <p style={{textAlign: "unset", fontWeight:"700"}}>${item.price}</p>
+          
           </div>
+          <div>
+            <p style={{textAlign: "center", fontWeight:"700"}}>$${item.price}</p>
+          </div>
+        </div>
+         
+          
+          
                
          
         </Col>

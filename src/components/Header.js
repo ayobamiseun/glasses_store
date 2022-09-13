@@ -4,6 +4,7 @@ import Shop from './Button'
 import Navbar from 'react-bootstrap/Navbar';
 import { BiSearchAlt2 } from 'react-icons/bi';
 import {BsFillCartCheckFill} from 'react-icons/bs';
+import { Routes, Route, Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -13,8 +14,8 @@ function Header() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto link">
-            <Nav.Link className="link" href="#features">Home</Nav.Link>
-            <Nav.Link className="link" href="#pricing">About</Nav.Link>
+            <Nav.Link className="link" href="#features"><Link to="/" style={{textDecoration:"none",color:"black"}}>Home</Link></Nav.Link>
+            <Nav.Link className="link" href="#pricing"><Link to="/about" style={{textDecoration:"none",color:"black"}}>About</Link></Nav.Link>
             <Nav.Link className="link" href="#pricing">Shop</Nav.Link>
             <Nav.Link className="link" href="#pricing">Contact</Nav.Link>
             

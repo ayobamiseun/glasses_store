@@ -3,9 +3,19 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Shop from './Button'
+import styled from 'styled-components';
+const DivHero = styled.div`
+
+.hero {
+  height:540px;
+  background-image:url("../img/wave.png");
+  background:#28BEBE;
+}
+
+`;
 export default function Hero() {
-  return (
-    <div style={{backgroundColor:"#28BEBE", height:"540px"}} >
+  return (<DivHero>
+    <div className="hero" >
 
    <div >
 
@@ -35,5 +45,5 @@ export default function Hero() {
     </Container>
     </div>
     </div>
-  );
+    </DivHero>);
 }
