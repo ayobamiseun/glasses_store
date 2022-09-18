@@ -2,9 +2,11 @@
 
 import { Box, Tab, Tabs, Typography } from '@mui/material';
 import All from './images/All'
-import Shoes from './images/Shoes'
+import Shoes from './images/Shoes';
+
 import { useState } from 'react';function Feature() {
   const [tabIndex, setTabIndex] = useState(0);const handleTabChange = (event, newTabIndex) => {
+   
     setTabIndex(newTabIndex);
   };return (
     <Box>

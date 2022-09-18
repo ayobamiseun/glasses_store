@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import styled from 'styled-components';
 
 const DivAbout = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200&family=PT+Mono&display=swap');
    .home {
     height:346px;
     
@@ -15,15 +16,18 @@ const DivAbout = styled.div`
    .img {
     width:100px;
     max-width: 40%;
-  position: absolute;
-  height:200px;
-  top: 71%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    height:200px;
+    top: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
    }
    .body{
     padding-top:30px;
     padding-bottom:20px;
+  
+
+font-family: 'PT Mono', monospace;
    }
 `;
 

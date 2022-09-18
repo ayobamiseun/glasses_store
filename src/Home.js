@@ -8,10 +8,29 @@ import Trending from './components/Trending';
 import Feature from './components/Feature';
 import All from './components/images/All'
 import Shoes from './components/images/Shoes'
+
 import './App.css'
+//redux
+import { useSelector } from 'react-redux';
 
 
 export default function Home() {
+//   const navigate = useNavigate()
+//    const cart = useSelector((state) => state.cart)
+
+// const getTotalQuantity = () => {
+
+//   let total = 0
+
+//   cart.forEach(item => {
+
+//     total += item.quantity
+
+//   })
+
+//   return total
+
+// }
     return (
        <div>
         <Header/>
@@ -27,7 +46,13 @@ export default function Home() {
         <Contact/>
         <Footer/>
         {/* <About /> */}
-       
+        {/* <div className='shopping-cart' onClick={() => navigate('/cart')}>
+
+<ShoppingCart id='cartIcon'/>
+
+<p>{getTotalQuantity() || 0}</p>
+
+</div> */}
        </div>
     )
   }

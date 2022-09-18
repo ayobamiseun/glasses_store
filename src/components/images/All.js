@@ -3,8 +3,12 @@ import React, {useState, useEffect} from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import Stack from 'react-bootstrap/Stack';
-// import {itemData} from './Data'
+import { ShoppingCart } from '@mui/icons-material'
+import {useNavigate} from 'react-router-dom'
+import { useSelector } from 'react-redux';
+//redux for carting
+import { useDispatch } from 'react-redux';
+import { addToCart } from "../../store/cart-slice";
 
 const options = {
   method: 'GET',
@@ -16,6 +20,9 @@ const options = {
   
  
 export default function All() {
+ 
+  
+
   const [items, setItems] = useState([]);
   useEffect(() => {
     
@@ -27,6 +34,17 @@ export default function All() {
       });
    
   },[])
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+  const cart = useSelector((state) => state.cart)
+
+  const getTotalQuantity = () => {
+    let total = 0
+    cart.forEach(item => {
+      total += item.quantity
+    })
+    return total
+  }
   return (
       <Container>
       
@@ -50,6 +68,15 @@ export default function All() {
           <div>
             <p style={{textAlign: "center", fontWeight:"700"}}>$${item.price}</p>
           </div>
+          <button 
+  
+  onClick={() => 
+    
+    dispatch(addToCart(item))
+
+  }>Add to Cart
+
+</button>
         </div>
          
           
@@ -59,7 +86,10 @@ export default function All() {
         </Col>
         ))}
       </Row>
-    
+    <div className='shopping-cart' onClick={() => navigate('/cart')}>
+        <ShoppingCart id='cartIcon'/>
+        <p>{getTotalQuantity() || 0}</p>
+      </div>
     
     </Container>
   );
