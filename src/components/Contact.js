@@ -18,7 +18,7 @@ const DivContact = styled.div`
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
 
 #contact {
-	background:#F9F9F9;
+	background:darkturquoise;
 	padding:25px;
 	margin:50px 0;
 }
@@ -120,9 +120,9 @@ export default function Contact() {
     <fieldset>
       <input placeholder="Your Phone Number" type="tel" tabindex="3" required/>
     </fieldset>
-    <fieldset>
+    {/* <fieldset>
       <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required/>
-    </fieldset>
+    </fieldset> */}
     <fieldset>
       <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
     </fieldset>

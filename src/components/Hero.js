@@ -2,7 +2,10 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Shop from './Button'
+import Shop from './Button';
+import Swiper from './Swiper';
+import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 import styled from 'styled-components';
 const DivHero = styled.div`
 
@@ -10,6 +13,22 @@ const DivHero = styled.div`
   height:540px;
   background-image:url("../img/wave.png");
   background:#28BEBE;
+}
+
+
+@media only screen and (max-width: 320px) {
+  h3 {
+    ${'' /* text-align: center; */}
+    max-width: 90%;
+  }
+   p {
+    ${'' /* text-align: center; */}
+    max-width: 90%;
+  }
+  .shop {
+    ${'' /* max-width: 40%; */}
+    margin: auto;
+  }
 }
 
 `;
@@ -27,9 +46,12 @@ export default function Hero() {
       <Row>
       
       <Col style={{marginTop:"190px", width:"300px", marginLeft:"5px"}} xs>
-         <div style={{width:"300px"}}><h3>A personalized eyewear shopping experience</h3>
-         <p>Get all your eye wears at a discounted price and also win gifts while shopping.</p>
-         <Shop />
+      <div style={{width:"300px"}}>
+      {/* <Bounce top> <h2>hello</h2> </Bounce> */}
+      <Fade top delay={1000}> <h3>A personalized eyewear shopping experience</h3> </Fade>
+      <Fade bottom delay={2000}> <p>Get all your eye wears at a discounted price and also win gifts while shopping.</p></Fade>
+      <Slide left delay={3000}> <div className="shop"> <Shop /></div> </Slide>
+        
          </div>
       </Col>
       
@@ -37,8 +59,8 @@ export default function Hero() {
         
         <Col style={{marginTop:"100px"}} xs>
             <div className="image-hero">
-            <img style={{height:"436px", marginLeft:"90px", background:"none"}} src={require('../img/glass2.png')} />
-            </div>
+            <Swiper/>
+             </div>
         </Col>
         {/* <Col xs={{ order: 1 }}>Third, but second</Col> */}
       </Row>

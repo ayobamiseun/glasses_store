@@ -23,12 +23,10 @@ function AutoLayoutExample() {
      
         
    
-      <Col>
-        <h5 style={{float:"right"}}>View all <FaLongArrowAltRight /></h5>
-        <div  style={{height:"193px", backgroundColor:"#28BEBE", width:"100%", marginTop:"38px"}}>
-        {/* <img  src={require('../img/glass1.png')} style={{}} /> */}
-        </div>
-        <div  style={{height:"193px", backgroundColor:"#28BEBE", width:"100%", marginTop:"38px"}}>
+      <Col className="col2">
+        <h5 className='div' style={{float:"right"}}>View all <FaLongArrowAltRight /></h5>
+        <div className="div"  style={{height:"193px", backgroundColor:"#28BEBE", width:"100%", marginTop:"38px"}}> </div>
+        <div className="div" style={{height:"193px", backgroundColor:"#28BEBE", width:"100%", marginTop:"38px"}}>
         {/* <img  src={require('../img/glass3.png')} /> */}
         </div>
       </Col>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Shop from './Button'
 import {BsFacebook, BsTwitter, BsSnapchat, BsInstagram} from 'react-icons/bs'
 
 
@@ -50,7 +51,8 @@ const DivFooter = styled.div`
 }
 .footer-links a
 {
-  color:#737373
+  color:#737373;
+  text-decoration:none;
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -64,6 +66,9 @@ const DivFooter = styled.div`
 .site-footer .social-icons
 {
   text-align:right
+}
+.gDICMR .site-footer a {
+  margin-left:20px;
 }
 .site-footer .social-icons a
 {
@@ -195,7 +200,7 @@ function Footer() {
           </div>
 
           <div class="col-xs-6 col-md-3">
-          <button>Shop Now</button>
+          <Shop/>
           </div>
         </div>
         <hr/>
@@ -204,7 +209,7 @@ function Footer() {
         <div class="row">
           <div class="col-md-8 col-sm-6 col-xs-12">
             <p class="copyright-text">Copyright 2022 
-         <a href="#">Ayobams</a>.
+         <a href="#" style={{marginLeft:"10px", textDecoration:"none"}}>Ayobams</a>
             </p>
           </div>
 

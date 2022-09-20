@@ -2,31 +2,36 @@
 
 import { Box, Tab, Tabs, Typography } from '@mui/material';
 import All from './images/All'
-import Shoes from './images/Shoes';
+import Kids from './images/kids';
+import Light from './images/light';
+import './style.css'
 
 import { useState } from 'react';function Feature() {
   const [tabIndex, setTabIndex] = useState(0);const handleTabChange = (event, newTabIndex) => {
    
     setTabIndex(newTabIndex);
   };return (
+    
     <Box>
+    
       <Box>
         <Tabs value={tabIndex} onChange={handleTabChange} variant="fullWidth" >
-          <Tab label="All Products" />
-          <Tab label="Anti-blue Light" />
-          <Tab label="Night Glasses" />
-          <Tab label="For Kids Only" />
+          <Tab label="Female Wears" style={{color:"lightseagreen"}} />
+          <Tab label="Gadgets" style={{color:"lightseagreen"}} />
+          <Tab label="Male Wears" style={{color:"lightseagreen"}} />
+          <Tab className="forkids" label="For Kids Only" style={{color:"lightseagreen"}} />
         </Tabs>
       </Box>
-      <Box sx={{ padding: 2 }}>
+      <Box sx={{ padding: 1 }}>
+      <h3 className="shopmob" style={{textAlign:"center",color:"lightseagreen", fontWeight:"700"}}>Latest</h3>
         {tabIndex === 0 && (
           <Box>
-            <All/>
+            <Light/>
           </Box>
         )}
         {tabIndex === 1 && (
           <Box>
-            <All />
+            <Kids />
           </Box>
         )}
         {tabIndex === 2 && (

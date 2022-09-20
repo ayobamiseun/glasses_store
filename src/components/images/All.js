@@ -67,8 +67,7 @@ export default function All() {
           </div>
           <div>
             <p style={{textAlign: "center", fontWeight:"700"}}>$${item.price}</p>
-          </div>
-          <button 
+            <button 
   
   onClick={() => 
     
@@ -77,6 +76,8 @@ export default function All() {
   }>Add to Cart
 
 </button>
+          </div>
+         
         </div>
          
           
@@ -86,10 +87,7 @@ export default function All() {
         </Col>
         ))}
       </Row>
-    <div className='shopping-cart' onClick={() => navigate('/cart')}>
-        <ShoppingCart id='cartIcon'/>
-        <p>{getTotalQuantity() || 0}</p>
-      </div>
+    
     
     </Container>
   );
