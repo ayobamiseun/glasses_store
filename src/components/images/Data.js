@@ -2,7 +2,7 @@ export const items = [
     {
       image: 'https://i.imgur.com/ruU04I6.jpg',
       title: 'Green Checkered Shirt',
-      price: 59,
+      price: 42,
      
     
       
@@ -10,7 +10,7 @@ export const items = [
     {
       image: 'https://i.imgur.com/sPxEkEI.jpg',
       title: 'Green and Black Flowers',
-      price: 60,
+      price: 62,
     },
     {
       image: 'https://i.imgur.com/S3Umfmb.jpg',
