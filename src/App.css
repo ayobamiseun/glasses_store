@@ -166,7 +166,7 @@ button.button:hover{
     .div {
        display:none;
     }
-    .css-1aquho2-MuiTabs-indicator {
+    /* .css-1aquho2-MuiTabs-indicator {
         display:none;
     } 
     .css-jpln7h-MuiTabs-scroller {
@@ -184,7 +184,7 @@ button.button:hover{
     }
     .css-251er {
         display: none !important;
-    }
+    } */
   }
   @media only screen and (min-width: 620px) {
     .shopmob {

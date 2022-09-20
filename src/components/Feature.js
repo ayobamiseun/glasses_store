@@ -16,14 +16,14 @@ import { useState } from 'react';function Feature() {
     
       <Box>
         <Tabs value={tabIndex} onChange={handleTabChange} variant="fullWidth" >
-          <Tab label="Female Wears" style={{color:"lightseagreen"}} />
+          <Tab label="Female" style={{color:"lightseagreen"}} />
           <Tab label="Gadgets" style={{color:"lightseagreen"}} />
-          <Tab label="Male Wears" style={{color:"lightseagreen"}} />
-          <Tab className="forkids" label="For Kids Only" style={{color:"lightseagreen"}} />
+          <Tab label="Male" style={{color:"lightseagreen"}} />
+          <Tab className="forkids" label="Kids" style={{color:"lightseagreen"}} />
         </Tabs>
       </Box>
       <Box sx={{ padding: 1 }}>
-      <h3 className="shopmob" style={{textAlign:"center",color:"lightseagreen", fontWeight:"700"}}>Latest</h3>
+      {/* <h3 className="shopmob" style={{textAlign:"center",color:"lightseagreen", fontWeight:"700"}}>Latest</h3> */}
         {tabIndex === 0 && (
           <Box>
             <Light/>
