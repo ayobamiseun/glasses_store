@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Trending from './components/Trending';
 import Feature from './components/Feature';
+import Fft from './components/Fft'
 import All from './components/images/All'
 import Shoes from './components/images/Shoes'
 import AOS from 'aos';
@@ -45,7 +46,7 @@ export default function Home() {
         </Hero>
         {/* <Text /> */}
         <Trending />
-        <Feature/>
+        <Fft/>
         {/* <All /> */}
         {/* <Shoes/> */}
         <Contact/>

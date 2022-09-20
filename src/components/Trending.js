@@ -14,7 +14,7 @@ function AutoLayoutExample() {
        
      
       <Col>
-       <h5>Trending</h5>
+       <h5 style={{color:"lightseagreen"}}>Trending</h5>
        <div style={{height:"430px", backgroundColor:"#28BEBE", width:"100%"}}>
        <img className="trend"  src={require('../img/girl1.png')} />
        </div>

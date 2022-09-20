@@ -175,9 +175,7 @@ button.button:hover{
     .css-1ujnqem-MuiTabs-root {
         min-height:0 !important;
     }
-     .col2 {
-        flex: none !important;
-    }
+     
 
     .forkids {
         display:none;
@@ -185,6 +183,9 @@ button.button:hover{
     .css-251er {
         display: none !important;
     } */
+    .col2 {
+        flex: none !important;
+    }
   }
   @media only screen and (min-width: 620px) {
     .shopmob {
@@ -199,8 +200,8 @@ button.button:hover{
     }
   }
 
-  .css-1aquho2-MuiTabs-indicator{
+  /* .css-1aquho2-MuiTabs-indicator{
     background-color: black !important;
     width:150px !important; 
     left:100px !important;
-} 
+}  */

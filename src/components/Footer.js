@@ -185,7 +185,7 @@ function Footer() {
         <div class="row">
           <div class="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p class="text-justify">About<i> Us </i>lorem20 </p>
+            <p class="text-justify">About<i> Us </i>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam  </p>
           </div>
 
           <div class="col-xs-6 col-md-3">

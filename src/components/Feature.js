@@ -4,18 +4,36 @@ import { Box, Tab, Tabs, Typography } from '@mui/material';
 import All from './images/All'
 import Kids from './images/kids';
 import Light from './images/light';
+import { createTheme, ThemeProvider  } from '@mui/material/styles';
 import './style.css'
+
 
 import { useState } from 'react';function Feature() {
   const [tabIndex, setTabIndex] = useState(0);const handleTabChange = (event, newTabIndex) => {
    
     setTabIndex(newTabIndex);
-  };return (
-    
+  };
+  const theme = createTheme({
+    palette: {
+      primary: {
+        light: '#757ce8',
+        main: '#3f50b5',
+        dark: '#002884',
+        contrastText: '#fff',
+      },
+      secondary: {
+       
+        main: '#616161',
+        
+      },
+    },
+  });
+  return (
+    <ThemeProvider theme={theme}>
     <Box>
     
       <Box>
-        <Tabs value={tabIndex} onChange={handleTabChange} variant="fullWidth" >
+        <Tabs value={tabIndex} onChange={handleTabChange} variant="fullWidth" indicatorColor="secondary">
           <Tab label="Female" style={{color:"lightseagreen"}} />
           <Tab label="Gadgets" style={{color:"lightseagreen"}} />
           <Tab label="Male" style={{color:"lightseagreen"}} />
@@ -46,5 +64,6 @@ import { useState } from 'react';function Feature() {
         )}
       </Box>
     </Box>
+    </ThemeProvider>
   );
 }export default Feature;
