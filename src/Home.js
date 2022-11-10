@@ -41,8 +41,7 @@ export default function Home() {
        <div>
         <Header/>
         <Hero> 
-        {/* hello */}
-        {/* <Text /> */}
+      
         </Hero>
         {/* <Text /> */}
         <Trending />
