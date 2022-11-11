@@ -63,9 +63,9 @@ h3 {
 	transform: scale(1.1);
 
 }
-#columns:hover figure:not(:hover) {
+/* #columns:hover figure:not(:hover) {
 	opacity: 0.4;
-}
+} */
 div#columns figure {
 	display: inline-block;
 	background: #FEFEFE;
