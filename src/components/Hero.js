@@ -34,6 +34,7 @@ const DivHero = styled.div`
 `;
 export default function Hero() {
   return (<DivHero>
+  
     <div className="hero" >
 
    <div >
